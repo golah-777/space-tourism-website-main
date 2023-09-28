@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Kumbh+Sans:wght@400;500;600&family=Open+Sans:wght@300;400;500;600;700;800&family=Overpass&family=Poppins:wght@200;300;400;500;600;700&family=REM:wght@300;500;600&family=Roboto:wght@300;400;500;700&family=Spectral:wght@200;400;500;600;700;800&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*{
+  
+ padding: 0px;
+ margin: 0px;
+ box-sizing: border-box;
+ font-family: 'Spectral',Arial, Helvetica, sans-serif ;
+ color: white;
+ /* transition:  2.4s ease; */
+}
+
+.body{
+  /* transition: background-image 0.5s ease;  */
+  background-image: url(assets/home/background-home-desktop.jpg);
+  overflow-y: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  transition: 1s ease;
+  z-index: 1;
+}
+
+
+
+nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 30px;
+  margin-left: 50px;
+  height: 60px;
+}
+
+.line-nav{
+  margin-left: 40px;
+  width: 600px;
+  height: 0.5px;
+  background-color: #4b4b4b;
+  position: relative;
+  z-index: 1;
+  margin-right: -20px;
+ 
+}
+
+/* .logo svg {
+  width: 20px;
+  height: 20px;
+} */
+
+
+.options-backgroung{
+
+  /* height: 100%; */
+  padding: 17px 0px;
+  width: 700px;
+  padding-left: 35px;
+  background-color: rgba(102, 102, 113, 0.5); /* Adjust the RGB values and the alpha (transparency) to your liking */
+  backdrop-filter: blur(10px); 
+}
+
+.close-menu{
+  position: absolute;
+  top: 30px;
+  left: 269px;
+  visibility: visible;
+}
+.more-options-mobile{
+  display: none;
+}
+.mobile-options{
+  display: none;
+}
+.options{
+  display: flex;
+  flex-direction: row;
+}
+
+.options strong , .options span{
+  font-weight: 200;
+  font-size: 15px;
+}
+
+.options strong{
+  font-weight: 500;
+}
+
+.option{
+  padding: 0px 20px;
+  cursor: pointer;
+}
+
+.active-bar{
+  height: 1px;
+  width: 100%;
+  background-color: azure;
+  position: relative;
+  top: 15px;
+  transition: 0.5s ease;
+}
+
+main{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 150px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  transform: translateY(20px); /* Adjust the initial position and style as needed */
+  transition: transform 0.5s ease; /* Adjust the transition properties as needed */
+}
+
+.main{
+  opacity: 1;
+  transition: opacity .5s ease-out;
+}
+
+.intro{
+  width: 320px;
+}
+
+main h1{
+  font-size: 100px;
+  font-weight: 200;
+  margin: 10px;
+}
+
+main h3{
+  font-weight: 200;
+}
+
+main p {
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.circle{
+  background-color: azure;
+  border-radius: 50%;
+  padding: 90px 50px;
+}
+
+.circle span{
+  color:black;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+/*page 2*/
+.destination{
+ position: absolute;
+ top: -70px;
+ font-size: 20px;
+ transition: 1s ease-in;
+}
+
+.destination span{
+  color: #757474;
+  font-weight: 400;
+  transition: 1s ease-in;
+}
+
+.planet-imj{
+  width: 100%;
+  height: 100%;
+  background-image: url(/starter-code/assets/destination/image-moon.png);
+  background-repeat: no-repeat;
+  background-size: 380px;
+  transition: background-image 1.5s ease-in;
+}
+
+.planets{
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+  opacity: 1;
+  transition: opacity .5s ease-out;
+}
+
+.planet-options{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 280px;
+  transition: 1s ease-in;
+}
+
+.planet-option{
+  font-size: 13.5px;
+  font-weight: 200;
+  cursor: pointer;
+  transition: 1s ease-in;
+}
+
+.planet-d-t{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0px;
+  margin-top: 15px;
+  border: 0px solid  #4b4b4b;
+  border-top-width: 0.1px;
+  transition: 1s ease-in;
+}
+
+.planet-d-t div {
+  margin-right: 50px;
+  transition: 1s ease-in;
+}
+
+.planet-d-t div span{
+  font-weight: 100;
+  font-size: 12px;
+  color: #c6c1c1;
+  transition: 1s ease-in;
+  transition: 1s ease-in;
+}
+
+.planet-d-t div p{
+  font-weight: 200;
+  font-size: 25px;
+  transition: 1s ease-in;
+}
+
+.planet-imj-div{
+  /* border:1px solid red ; */
+  width: 445px;
+  height: 405px;
+  transition: 1s ease-in;
+}
+
+/*page 3*/
+
+.crew-role{
+  color: #757474;
+  font-weight: 400;
+}
+
+.crew-name{
+  font-size: 45px;
+  font-weight: 400;
+}
+
+.crew-imj-div{
+  /* border:1px solid red ; */
+  width: 445px;
+  height: 425px;
+  position: relative;
+  right: 70px;
+}
+
+.crew-imj{
+  width: 100%;
+  height: 100%;
+  background-image: url(/starter-code/assets/crew/image-anousheh-ansari.webp);
+  background-repeat: no-repeat;
+  background-size: 380px;
+  background-position: 0px 26px;
+  transition: 1.5s ease;
+}
+
+.crew-options{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 55px;
+}
+
+.crew-options li{
+  font-size: 25px;
+  color: #4b4b4b;
+  cursor: pointer;
+}
+
+.crew-options .active-li{
+  color: white;
+  transition: 1s ease-in;
+  cursor: pointer;
+}
+
+.crew-info{
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  opacity: 1;
+  transition: opacity .5s ease-out;
+}
+
+.crew-info p {
+  width: 350px;
+}
+
+/*page 4*/
+
+.mid-sec{
+  display: flex;
+  flex-direction: row;
+  opacity: 1;
+  transition: opacity .5s ease-out;
+}
+
+.Technology{
+  font-weight: 200;
+  font-size: 14px;
+}
+
+.type-tech{
+  font-size: 43px;
+  font-weight: 300;
+}
+
+.no-tech{
+  border: 1px solid #4b4b4b;
+  margin: 20px 35px;
+  margin-top: 0px;
+  border-radius: 50%;
+  padding: 13px 20px;
+} 
+
+.tech-info{
+  width: 550px;
+  margin-left: 65px;
+}
+
+.tech-info p {
+  width: 330px;
+}
+
+.active-tech{
+  background-color: white;
+  border: 0px;
+  transition: 1.5s ease;
+}
+
+.active-tech span{
+ color: black;
+}
+
+.tech{
+  left: 180px;
+}
+
+.tech-imj-div{
+  /* border:1px solid red ; */
+  width: 455px;
+  height: 464px;
+  position: relative;
+  right: 70px;
+  bottom: 60px;
+  overflow-y: hidden;
+}
+
+.tech-img{
+  width: 100%;
+  height: 100%;
+  background-image: url(/starter-code/assets/technology/image-launch-vehicle-portrait.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: center; */
+  background-position: 0px 15px;
+  transition:background-image 1.5s ease-out;
+}
+
+.numbers-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

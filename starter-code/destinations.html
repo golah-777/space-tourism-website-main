@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="index.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body>
+  <div class="body">
+    <nav>
+      <div class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="48px" height="48px"><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#FFF"/><path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/></g></svg>
+      </div>
+      <div class="line-nav"></div>
+      <div class="options-backgroung">
+        <div class="options">
+          <div class="option home-nav">
+            <strong>00</strong>  <span>Home</span>
+            <div></div>
+          </div>
+          <div class="option destination-nav">
+            <strong>01</strong>  <span>Destination</span>
+            <div class="active-bar"></div>
+          </div>
+          <div class="option crew-nav">
+            <strong>02</strong>  <span>Crew</span>
+            <div></div>
+          </div>
+          <div class="option tech-nav">
+            <strong>03</strong>  <span>Technology</span>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="planet-imj-div" >
+        <h3 class="destination"><span>01 </span>  PICK YOUR DESTINATION</h3>
+        <div class="planet-imj"></div>
+      </div>
+      <div class="planets">
+        <div>
+          <div class="planet-options">
+            <div class="planet-option moon">
+              <span>MOON</span>
+              <div class="active-bar active-moon"></div>
+            </div>
+            <div class="planet-option">
+              <span id="mars">MARS</span>
+              <div class="active-mars"></div>
+            </div>
+            <div class="planet-option europa">
+              <span>EUROPA</span>
+              <div class="active-europa"></div>
+            </div>
+            <div class="planet-option titan">
+              <span>TITAN</span>
+              <div class="active-titan"></div>
+            </div>
+         </div>
+         <h1 class="planet-name">MOON</h1>
+         <p class="planet-description">"See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites."</p>
+        <div class="planet-d-t">
+          <div>
+            <span>Avg. distance</span>
+            <p class="planet-distance">384,400 km</p>
+          </div>
+          <div>
+            <span>Est. travel time</span>
+            <p class="planet-time">3 days</p>
+          </div>
+        </div>
+      </div>
+    </main>  
+  </div>
+  <script src="../index.js"></script>
+  <script src="../destination.js"></script>
+</body>
+</html>

@@ -1,0 +1,820 @@
+@media only screen and (min-width:768px) and (max-width:1023px) {
+ 
+  .body{
+    overflow-y: scroll;
+  }
+  .options strong{
+    font-weight: 500;
+    display: none;
+  }
+
+  main{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 100px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateY(20px); /* Adjust the initial position and style as needed */
+    transition: transform 0.5s ease; /* Adjust the transition properties as needed */
+    text-align: center;
+  }
+
+  .circle{
+    background-color: azure;
+    border-radius: 50%;
+    padding: 90px 50px;
+    margin-top: 100px;
+  }
+
+  .destination{
+    position: absolute;
+    top: -40px;
+    font-size: 20px;
+    transition: 1s ease-in;
+    z-index: 1;
+    left: 75px;
+  
+  }
+
+  .planets{
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    opacity: 1;
+    transition: opacity .5s ease-out;
+    position: relative;
+    top: 80px;
+    text-align: center;
+  }
+
+  .planet-imj{
+    width: 100%;
+    height: 100%;
+    background-image: url(/starter-code/assets/destination/image-moon.png);
+    background-repeat: no-repeat;
+    background-size: 380px;
+    transition: background-image 1.5s ease-in;
+    position: relative;
+    left: 30px;
+    top: 50px;
+  }
+   
+  .planet-d-t div {
+    margin-right: 0px;
+    transition: 1s ease-in;
+    width: 50%;
+  }
+
+  .crew-imj-div{
+    /* border:1px solid red ; */
+    width: 445px;
+    height: 425px;
+    position: relative;
+    right: 0px;
+  }
+
+  .crew-options{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .crew-info{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    opacity: 1;
+    transition: opacity .5s ease-out;
+    text-align: center;
+    justify-content: center;
+   
+    margin-top: 70px;
+  }
+
+  .crew-bio{
+    width: 100%;
+    margin-left: 25px;
+  }
+
+  .crew-imj-div{
+    /* border:1px solid red ; */
+    width: 400px;
+    height: 425px;
+    position: relative;
+    right: 0px;
+    top: 0px;
+  }
+
+  .mid-sec{
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    transition: opacity .5s ease-out;
+    position: absolute;
+    top: 350px;
+    left: 200px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .tech-info p {
+    width: 400px;
+  }
+
+
+  .numbers-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .tech-imj-div{
+    /* border:1px solid red ; */
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    bottom: -340px;
+    overflow-y: hidden;
+  }
+
+  .tech-info{
+    width: 550px;
+    margin-left: 65px;
+
+  }
+
+  .tech-img{
+    width: 100%;
+    height: 100%;
+    background-image: url(/starter-code/assets/technology/image-launch-vehicle-portrait.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+    background-position: 0px -350px;
+    transition:background-image 1.5s ease-out;
+  }
+
+  .close-menu{
+    position: absolute;
+    top: 30px;
+    left: 310px;
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width:320px) and (max-width:374px) {
+
+  nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 30px;
+    margin-left: 30px;
+    height: 60px;
+  }
+  main h1{
+    font-size: 75px;
+    font-weight: 200;
+    margin: 10px;
+  }
+
+  main p {
+    font-size: 13px;
+    font-weight: 300;
+    padding: 0px 15px;
+  }
+
+  .line-nav{
+    margin-left: 40px;
+    width: 600px;
+    height: 0.5px;
+    background-color: #4b4b4b;
+    position: relative;
+    z-index: 1;
+    margin-right: -20px;
+    display: none;
+  }
+  .options-backgroung{
+    display: none;
+    /* height: 100%; */
+    padding: 17px 0px;
+    width: 700px;
+    padding-left: 35px;
+    background-color: rgba(102, 102, 113, 0.5); /* Adjust the RGB values and the alpha (transparency) to your liking */
+    backdrop-filter: blur(10px); 
+  }
+
+  .mobile-options{
+    display: inline;
+    position: absolute;
+    background-color: rgba(0, 0, 10, 0.5);/* Adjust the RGB values and the alpha (transparency) to your liking */
+    /* backdrop-filter: blur(10px);  */
+    width: 100%;
+    /* background-color: blue; */
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    top: 0px;
+    display: none;
+  }
+
+  .mobile-option{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 45%;
+    height: 100vh;
+    background-color: black;
+
+  }
+
+  .mobile-option .option{
+    padding: 10px 0px;
+    padding-left: 15px;
+    z-index: 1;
+  }
+
+  .more-options-mobile{
+    display: inline;
+    position: relative;
+    left: 190px;
+  }
+
+  .options{
+    display: flex;
+    flex-direction: row;
+  
+  }
+  .body{
+    overflow-y: scroll;
+  }
+  .options strong{
+    font-weight: 500;
+    display: none;
+  }
+
+  main{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 100px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateY(20px); /* Adjust the initial position and style as needed */
+    transition: transform 0.5s ease; /* Adjust the transition properties as needed */
+    text-align: center;
+  }
+
+  .circle{
+    background-color: azure;
+    border-radius: 50%;
+    padding: 90px 50px;
+    margin-top: 100px;
+  }
+
+  .destination{
+    position: absolute;
+    top: -40px;
+    font-size: 20px;
+    transition: 1s ease-in;
+    z-index: 1;
+    left: 15px;
+    overflow-x: hidden;
+  }
+
+  .planets{
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    opacity: 1;
+    transition: opacity .5s ease-out;
+    position: relative;
+    top: 80px;
+    text-align: center;
+  }
+
+  .planet-imj{
+    width: 100%;
+    height: 100%;
+    background-image: url(/starter-code/assets/destination/image-moon.png);
+    background-repeat: no-repeat;
+    background-size: 250px;
+    transition: background-image 1.5s ease-in;
+    position: relative;
+    left: 25px;
+    top: 150px;
+    overflow-x: hidden;
+  }
+   
+  .planet-d-t div {
+    margin-right: 0px;
+    transition: 1s ease-in;
+    width: 50%;
+  }
+
+  .planets{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    opacity: 1;
+    transition: opacity .5s ease-out;
+  }
+
+  .planet-options{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 10px;
+    transition: 1s ease-in;
+  }
+
+  .planet-imj-div{
+    /* border:1px solid red ; */
+    width: 300px;
+    height: 305px;
+    transition: 1s ease-in;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  .crew-imj-div{
+    /* border:1px solid red ; */
+    width: 100%;
+    height: 425px;
+    position: relative;
+    right: 0px;
+  }
+
+  .crew-options{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .crew-info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    opacity: 1;
+    transition: opacity .5s ease-out;
+    text-align: center;
+    justify-content: center;
+    overflow-x: hidden;
+    margin-top: 70px;
+  }
+
+  .crew-bio{
+    width: 320px;
+    margin-left: 0px;
+    padding: 0px;
+    padding-right: 50px;
+    padding-left: 15px;
+    overflow-x: hidden;
+  }
+
+  .crew-imj-div{
+    /* border:1px solid red ; */
+    width: 100%;
+    height: 425px;
+    position: relative;
+    right: 0px;
+    top: 0px;
+  }
+
+  .crew-name{
+    font-size: 35px;
+    font-weight: 400;
+    padding: 15px;
+  }
+
+  .crew-imj{
+    width: 100%;
+    height: 100%;
+    background-image: url(/starter-code/assets/crew/image-anousheh-ansari.webp);
+    background-repeat: no-repeat;
+    background-size: 380px;
+    background-position: -15px 24px;
+    transition: 1.5s ease;
+  }
+
+  .mid-sec{
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    transition: opacity .5s ease-out;
+    position: absolute;
+    top: 350px;
+    left: 0px;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .tech-info p {
+    width: 100%;
+  }
+
+
+  .numbers-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+  }
+
+  .no-tech{
+    border: 1px solid #4b4b4b;
+    margin: 20px 15px;
+    margin-top: 0px;
+    border-radius: 50%;
+    padding: 13px 20px;
+  } 
+
+
+  .tech-imj-div{
+    /* border:1px solid red ; */
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    bottom: -340px;
+    overflow-y: hidden;
+  }
+
+  .tech-info{
+    width: 100%;
+    margin-left: 65px;
+
+  }
+
+  .tech-img{
+    width: 100%;
+    height: 100%;
+    background-image: url(/starter-code/assets/technology/image-launch-vehicle-portrait.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+    background-position: -4px 0px;
+    transition:background-image 1.5s ease-out;
+  }
+
+  .tech-bio{
+    width: 320px;
+    padding: 0px;
+    overflow-x: hidden;
+    /* padding-right: 90px;
+    padding-left: 10px; */
+    padding: 0px 10px;
+  }
+
+  .type-tech{
+    font-size: 35px;
+    padding: 0px 3px;
+  }
+
+}
+
+@media only screen and (min-width:375px) and (max-width:424px) {
+
+  nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 30px;
+    margin-left: 30px;
+    height: 60px;
+  }
+  main h1{
+    font-size: 75px;
+    font-weight: 200;
+    margin: 10px;
+  }
+
+  main p {
+    font-size: 13px;
+    font-weight: 300;
+    padding: 0px 15px;
+  }
+
+  .line-nav{
+    margin-left: 40px;
+    width: 600px;
+    height: 0.5px;
+    background-color: #4b4b4b;
+    position: relative;
+    z-index: 1;
+    margin-right: -20px;
+    display: none;
+  }
+  .options-backgroung{
+    display: none;
+    /* height: 100%; */
+    padding: 17px 0px;
+    width: 700px;
+    padding-left: 35px;
+    background-color: rgba(102, 102, 113, 0.5); /* Adjust the RGB values and the alpha (transparency) to your liking */
+    backdrop-filter: blur(10px); 
+  }
+
+  .close-menu{
+    position: absolute;
+    top: 30px;
+    left: 310px;
+  }
+
+  .mobile-options{
+   
+    position: absolute;
+    background-color: rgba(0, 0, 10, 0.5);/* Adjust the RGB values and the alpha (transparency) to your liking */
+    /* backdrop-filter: blur(10px);  */
+    width: 100%;
+    /* background-color: blue; */
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    /* display: none; */
+    top: 0px;
+    display: none;
+    transition: display 1.5s ease;
+  }
+
+  .mobile-option{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 45%;
+    height: 100vh;
+    background-color: black;
+
+  }
+
+  .mobile-option .option{
+    padding: 10px 0px;
+    padding-left: 15px;
+  }
+
+  .more-options-mobile{
+    display: inline;
+    position: relative;
+    left: 230px;
+  }
+
+  .options{
+    display: flex;
+    flex-direction: row;
+  
+  }
+  .body{
+    overflow-y: scroll;
+  }
+  .options strong{
+    font-weight: 500;
+    display: none;
+  }
+
+  main{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 100px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateY(20px); /* Adjust the initial position and style as needed */
+    transition: transform 0.5s ease; /* Adjust the transition properties as needed */
+    text-align: center;
+  }
+
+  .circle{
+    background-color: azure;
+    border-radius: 50%;
+    padding: 90px 50px;
+    margin-top: 100px;
+  }
+
+  .destination{
+    position: absolute;
+    top: -40px;
+    font-size: 20px;
+    transition: 1s ease-in;
+    z-index: 1;
+    left: 15px;
+    overflow-x: hidden;
+  }
+
+  .planets{
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    opacity: 1;
+    transition: opacity .5s ease-out;
+    position: relative;
+    top: 80px;
+    text-align: center;
+  }
+
+  .planet-imj{
+    width: 100%;
+    height: 100%;
+    background-image: url(/starter-code/assets/destination/image-moon.png);
+    background-repeat: no-repeat;
+    background-size: 250px;
+    transition: background-image 1.5s ease-in;
+    position: relative;
+    left: 25px;
+    top: 100px;
+    overflow-x: hidden;
+  }
+   
+  .planet-d-t div {
+    margin-right: 0px;
+    transition: 1s ease-in;
+    width: 50%;
+  }
+
+  .planets{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    opacity: 1;
+    transition: opacity .5s ease-out;
+  }
+
+  .planet-options{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 10px;
+    transition: 1s ease-in;
+  }
+
+  .planet-imj-div{
+    /* border:1px solid red ; */
+    width: 300px;
+    height: 400px;
+    transition: 1s ease-in;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  .crew-imj-div{
+    /* border:1px solid red ; */
+    width: 100%;
+    height: 425px;
+    position: relative;
+    right: 0px;
+  }
+
+  .crew-options{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .crew-info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    opacity: 1;
+    transition: opacity .5s ease-out;
+    text-align: center;
+    justify-content: center;
+    overflow-x: hidden;
+    margin-top: 70px;
+  }
+
+  .crew-bio{
+    width: 320px;
+    margin-left: 0px;
+    padding: 0px;
+    padding-right: 15px;
+    padding-left: 40px;
+    overflow-x: hidden;
+  }
+
+  .crew-imj-div{
+    /* border:1px solid red ; */
+    width: 100%;
+    height: 425px;
+    position: relative;
+    right: 0px;
+    top: 0px;
+  }
+
+  .crew-name{
+    font-size: 35px;
+    font-weight: 400;
+    padding: 15px;
+  }
+
+  .crew-imj{
+    width: 100%;
+    height: 100%;
+    background-image: url(/starter-code/assets/crew/image-anousheh-ansari.webp);
+    background-repeat: no-repeat;
+    background-size: 380px;
+    background-position: -10px 24px;
+    transition: 1.5s ease;
+  }
+
+  .mid-sec{
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    transition: opacity .5s ease-out;
+    position: absolute;
+    top: 350px;
+    left: 0px;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .tech-info p {
+    width: 100%;
+  }
+
+
+  .numbers-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 375px;
+  }
+
+  .no-tech{
+    border: 1px solid #4b4b4b;
+    margin: 20px 15px;
+    margin-top: 0px;
+    border-radius: 50%;
+    padding: 13px 20px;
+  } 
+
+
+  .tech-imj-div{
+    /* border:1px solid red ; */
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    bottom: -340px;
+    overflow-y: hidden;
+  }
+
+  .tech-info{
+    width: 100%;
+    margin-left: 65px;
+
+  }
+
+  .tech-img{
+    width: 100%;
+    height: 100%;
+    background-image: url(/starter-code/assets/technology/image-launch-vehicle-portrait.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+    background-position: -1px 0px;
+    transition:background-image 1.5s ease-out;
+  }
+
+  .tech-bio{
+    width: 320px;
+    padding: 0px;
+    overflow-x: hidden;
+    /* padding-right: 90px;
+    padding-left: 10px; */
+    padding: 0px 10px;
+  }
+
+  .type-tech{
+    font-size: 35px;
+    padding: 0px 3px;
+  }
+
+}
